@@ -1,0 +1,29 @@
+extends ../layouts/layout.pug
+block main 
+  .container-fluid
+    .main.d-flex.w-100.d-flex.justify-content-center.pt-5
+      .float-start.col-5.rounded-left.pt-5.pl-5.text-light.shadow(style="background: linear-gradient(165deg, blue, transparent);height: 250px !important;")
+        h1=cname
+        h3
+          i.fa.fa-plane.fa-light.fa-2x
+      .float-end.col-7.rounded-right.p-5.shadow(style="background: linear-gradient(165deg, yellow, #daff0c);height: 250px !important;")
+        h2.font-weight-light #{des} 
+        h3.font-weight-light wind-speed: #{wind}
+        h3.font-weight-light temperature: #{temp}
+          i.ml-2.fa.fa-thermometer-half.text-dark.font-weight-light c
+block footer 
+  footer.footer.text-center.fixed-bottom#footer
+    .container.mt-5
+      ul.list-inline.mt-5
+        li.list-inline-item &nbsp;
+          a.text-white.social-link.rounded-circle(href='https://www.instagram.com/fullacademy_programming')
+            i.icon-social-instagram
+        li.list-inline-item &nbsp;
+          a.text-white.social-link.rounded-circle(href='https://t.me/programmerrr')
+            i.fa.fa-telegram
+        li.list-inline-item &nbsp;
+          a.text-white.social-link.rounded-circle(href='https://www.github.com/Dan9957')
+            i.icon-social-github
+      p.text-muted.mb-0.small All rights of this Work sample reserved &nbsp; &copy;
+    a.js-scroll-trigger.scroll-to-top.rounded(href='#page-top')
+      i.fa.fa-angle-up

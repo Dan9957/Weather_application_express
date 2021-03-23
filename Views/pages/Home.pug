@@ -1,0 +1,102 @@
+extends ../layouts/layout.pug
+
+block main
+    header.d-flex.masthead(style='background-image:url("/assets/img/bg-masthead.jpg");')
+      .container.my-auto.text-center
+        h1.mb-1 Weather app
+        h3.mb-5
+          em A work sample by Daniel.h.gholami
+        a.btn.btn-primary.btn-xl.js-scroll-trigger(role='button' href='#about') Find Out More
+        .overlay
+    section#about.content-section.bg-light
+      .container.text-center
+        .row
+          .col-lg-10.mx-auto
+            h2 I create a weather application
+            p.lead.mb-5
+              span I use Express,Bootstrap...
+              span !
+            a.btn.btn-dark.btn-xl.js-scroll-trigger(role='button' href='/Weather') Let`s see it.
+    section#services.content-section.bg-primary.text-white.text-center
+      .container
+        .content-section-heading
+          h3.text-secondary.mb-0 Services
+          h2.mb-5 What i Offer
+        .row
+          .col-md-12.col-lg-6.mb-5.mb-lg-0
+            span.mx-auto.service-icon.rounded-circle.mb-3
+              i.icon-screen-smartphone
+            h4
+              strong Responsive
+            p.mb-0.text-faded Looks great on any screen size!
+          .col-md-12.col-lg-6.mb-5.mb-lg-0
+            span.mx-auto.service-icon.rounded-circle.mb-3
+              i.icon-pencil
+            h4
+              strong Redesigned
+            p.mb-0.text-faded Freshly redesigned for Bootstrap 4.
+    section.callout(style='background:linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("/assets/img/bg-callout.jpg?h=4b06cd229840dd2ac20165f423f36ca6");background-position:center center;background-repeat:no-repeat;background-size:cover;')
+      .container.text-center
+        h2.mx-auto.mb-5
+          span Welcome to&nbsp;
+          em your
+          span
+            br
+            | next website!
+            br
+        a.btn.btn-primary.btn-xl.js-scroll-trigger(role='button' href='#footer') Call me!
+    section#portfolio.content-section
+      .container
+        .content-section-heading.text-center
+          h3.text-secondary.mb-0 Portfolio
+          h2.mb-5 Recent Projects
+        .row.no-gutters
+          .col-lg-6
+            a.portfolio-item(href='#')
+              .caption
+                .caption-content
+                  h2 Stationary
+                  p.mb-0 A yellow pencil with envelopes on a clean, blue backdrop!
+              img.img-fluid(src='/assets/img/portfolio-1.jpg?h=f2911623a5f1dddbd3135b8ecfe93633')
+          .col-lg-6
+            a.portfolio-item(href='#')
+              .caption
+                .caption-content
+                  h2 Ice Cream
+                  p.mb-0 A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!
+              img.img-fluid(src='/assets/img/portfolio-2.jpg?h=ee725215485ad0888dec967bb2ab719a')
+          .col-lg-6
+            a.portfolio-item(href='#')
+              .caption
+                .caption-content
+                  h2 Strawberries
+                  p.mb-0 Strawberries are such a tasty snack, especially with a little sugar on top!
+              img.img-fluid(src='/assets/img/portfolio-3.jpg?h=dac0fc6aa004db1c17158331305cd767')
+          .col-lg-6
+            a.portfolio-item(href='#')
+              .caption
+                .caption-content
+                  h2 Workspace
+                  p.mb-0 A yellow workspace with some scissors, pencils, and other objects.
+              img.img-fluid(src='/assets/img/portfolio-4.jpg?h=33c1d034720bc92a7eb662caf27f10bb')
+    section.content-section.bg-primary.text-white
+      .container.text-center
+        h2.mb-4 The buttons below are impossible to resist..
+        a.btn.btn-light.btn-xl.mr-4(role='button' href='#') Click Me!
+        a.btn.btn-dark.btn-xl.mr-4(role='button' href='#') Look at Me
+block footer 
+  footer.footer.text-center#footer
+      .container
+        ul.list-inline.mb-5
+          li.list-inline-item &nbsp;
+            a.text-white.social-link.rounded-circle(href='https://www.instagram.com/fullacademy_programming')
+              i.icon-social-instagram
+          li.list-inline-item &nbsp;
+            a.text-white.social-link.rounded-circle(href='https://t.me/programmerrr')
+              i.fa.fa-telegram
+          li.list-inline-item &nbsp;
+            a.text-white.social-link.rounded-circle(href='https://www.github.com/Dan9957')
+              i.icon-social-github
+        p.text-muted.mb-0.small All rights of this Work sample reserved &nbsp; &copy;
+      a.js-scroll-trigger.scroll-to-top.rounded(href='#page-top')
+        i.fa.fa-angle-up

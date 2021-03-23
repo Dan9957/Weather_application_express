@@ -1,0 +1,26 @@
+extends ../layouts/layout.pug
+
+block main
+    .container-fluid.bg-warning.bg-warning-gradient.border.border-0.shadow-sm.mt-5.mx-auto.pt-5.pb-5.w-75.rounded
+        form(method="post",action="/Weather")
+            .input-group.col-12.d-flex.justify-content-center.border.border-0
+                .form-outline.col-9
+                    input.form-control#form1.border.border-0.shadow(type="text", name="name" placeholder="City name") 
+                button.btn.btn-primary.btn-md.shadow-sm.border.border-0.h-25(type="submit")
+                    i.fa.fa-search  
+block footer 
+    footer.footer.text-center.fixed-bottom#footer
+      .container
+        ul.list-inline.mb-5
+          li.list-inline-item &nbsp;
+            a.text-white.social-link.rounded-circle(href='https://www.instagram.com/fullacademy_programming')
+              i.icon-social-instagram
+          li.list-inline-item &nbsp;
+            a.text-white.social-link.rounded-circle(href='https://t.me/programmerrr')
+              i.fa.fa-telegram
+          li.list-inline-item &nbsp;
+            a.text-white.social-link.rounded-circle(href='https://www.github.com/Dan9957')
+              i.icon-social-github
+        p.text-muted.mb-0.small All rights of this Work sample reserved &nbsp; &copy;
+      a.js-scroll-trigger.scroll-to-top.rounded(href='#page-top')
+        i.fa.fa-angle-up
